@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".fragments.home.HomeFragment">
+
+    <TextView
+        android:layout_width="413dp"
+        android:layout_height="60dp"
+        android:background="@drawable/tablo"
+        android:paddingStart="150dp"
+        android:paddingTop="10dp"
+        android:text="Заметки"
+        android:textColor="#B1B1B1"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/menu_icon"
+        android:paddingTop="20dp" />
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="370dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        android:paddingTop="20dp" />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/oval"
+        android:backgroundTint="#191818"
+        android:hint="Поиск заметок"
+        android:paddingStart="50dp"
+        android:textColorHint="#B1B1B1" />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="90dp"
+        android:layout_marginRight="150dp"
+        android:background="@drawable/search" />
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="330dp"
+        android:background="@drawable/oval2"
+        android:backgroundTint="#191818"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:text="Нужно сделать:"
+        android:textColor="#B1B1B1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="170dp"
+        android:text="Работы с проектом, сделать домашку, убраться и..."
+        android:textColor="#B1B1B1"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="200dp"
+        android:text="6 июня"
+        android:textColor="#616161"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="187dp"
+        android:text="12:45"
+        android:textColor="#616161"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="330dp"
+        android:background="@drawable/oval2"
+        android:backgroundTint="#EBE4C9"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:text="Нужно сделать:"
+        android:textColor="#A1865E"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="70dp"
+        android:text="Работы с проектом, сделать домашку, убраться и..."
+        android:textColor="#A18D5D"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="100dp"
+        android:text="05.05.21"
+        android:textColor="#E3A73B"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="90dp"
+        android:text="12:45"
+        android:textColor="#B09463"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/plus" />
+
+
+</FrameLayout>
