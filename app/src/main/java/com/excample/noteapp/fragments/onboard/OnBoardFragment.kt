@@ -11,6 +11,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.excample.noteapp.R
 import com.excample.noteapp.adapters.OnBoardViewPagerAdapter
 import com.excample.noteapp.databinding.FragmentOnBoardBinding
+import com.excample.noteapp.utils.PreferenceHelper
 import com.google.android.material.tabs.TabLayoutMediator
 
 class OnBoardFragment : Fragment() {
@@ -29,32 +30,25 @@ class OnBoardFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         TabLayoutMediator(binding.tabLayout, binding.viewPager) { _, _ -> }
         initialize()
-        clickButton()
-        clickHome()
         onPage()
+        setupListener()
+        openSignUp()
     }
-
-    private fun clickHome() {
-        binding.homeButton.setOnClickListener {
-            findNavController().navigate(R.id.action_onBoardFragment_to_homeFragment)
-
-        }
-    }
-
 
     private fun initialize() {
         binding.viewPager.adapter = OnBoardViewPagerAdapter(this@OnBoardFragment)
+        PreferenceHelper.unit(requireContext())
     }
 
-    private fun clickButton() = with(binding.viewPager) {
+    private fun setupListener() = with(binding.viewPager) {
+        binding.homeButton.setOnClickListener {
+            findNavController().navigate(R.id.action_onBoardFragment_to_signUpFragment)
+        }
         binding.nextButton.setOnClickListener {
             if (currentItem < 2) {
                 setCurrentItem(currentItem + 1, true)
             }
-
-
         }
-
     }
 
     private fun onPage() = with(binding) {
@@ -64,21 +58,23 @@ class OnBoardFragment : Fragment() {
                     0 -> {
                         nextButton.isVisible = true
                         homeButton.isVisible = false
-
                     }
                     1 -> {
                         nextButton.isVisible = true
                         homeButton.isVisible = false
-
                     }
                     2 -> {
                         nextButton.isVisible = false
                         homeButton.isVisible = true
-
                     }
                 }
                 super.onPageSelected(position)
             }
+
         })
+    }
+
+    private fun openSignUp() {
+        PreferenceHelper.name = true
     }
 }

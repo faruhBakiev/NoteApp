@@ -12,20 +12,20 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center|bottom"
         android:layout_marginBottom="250dp"
-        android:text="HelloWorld"
+        android:text="@string/helloworld"
         android:textColor="@color/white"
         android:textSize="20sp" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
+        android:backgroundTint="@color/white"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_gravity="center"
         android:layout_marginTop="60dp"
         android:layout_marginBottom="150dp"
-        android:background="@color/white"
+        android:background="@drawable/oval"
         app:lottie_autoPlay="true"
         app:lottie_loop="true" />
-
 
 </FrameLayout>

@@ -10,7 +10,6 @@ class OnBoardViewPagerAdapter(
     fragment: Fragment
 ) : FragmentStateAdapter(fragment) {
 
-    
     override fun getItemCount(): Int {
         return 3
     }

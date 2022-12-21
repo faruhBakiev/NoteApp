@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".fragments.signup.SignUpFragment">
+
+    <TextView
+        android:id="@+id/table"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="210dp"
+        android:background="@drawable/signup" />
+
+    <TextView
+        android:id="@+id/registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="80dp"
+        android:text="Регистрация по номеру"
+        android:textColor="#8E8B8B"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/ovaledit"
+        android:drawableStart="@drawable/call"
+        android:drawablePadding="15dp"
+        android:hint="Введите номер телефона"
+        android:paddingStart="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="#8E8B8B" />
+
+    <Button
+        android:id="@+id/send_code_button"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/oval2"
+        android:backgroundTint="#D88B02"
+        android:text="Получить код"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/et_code"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/ovaledit"
+        android:drawableStart="@drawable/mail"
+        android:drawablePadding="15sp"
+        android:hint="Ваш код"
+        android:paddingStart="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="#8E8B8B" />
+
+    <Button
+        android:id="@+id/access_code_button"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/oval2"
+        android:backgroundTint="#D88B02"
+        android:text="Подтвердить"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="120dp"
+        android:text="Отправить снова"
+        android:textColor="#D88B02" />
+
+</FrameLayout>

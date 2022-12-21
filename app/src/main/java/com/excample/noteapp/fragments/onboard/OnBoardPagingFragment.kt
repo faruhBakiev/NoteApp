@@ -10,7 +10,7 @@ import com.excample.noteapp.databinding.FragmentOnBoardPagingBinding
 
 class OnBoardPagingFragment : Fragment() {
 
-    lateinit var binding: FragmentOnBoardPagingBinding
+    private lateinit var binding: FragmentOnBoardPagingBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -41,7 +41,6 @@ class OnBoardPagingFragment : Fragment() {
                 onText.text = "Куча функций и интересных фишек"
                 animationView.setAnimation(R.raw.lottie3)
             }
-
 
         }
     }
